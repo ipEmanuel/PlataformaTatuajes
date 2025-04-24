@@ -4,16 +4,17 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Portfolio</title>
+    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
+    @* <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" /> *@
     <link rel="stylesheet" href="~/css/estilos.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" />
 </head>
 <body>
     <header>
-        <h1>Durlock Pro</h1>
+        @* <a href="/">Noré</a> *@
+        <h1>Noré</h1>
         <nav>
             <a href="/">Inicio</a>
-            <a href="/Home/Galeria">Trabajos</a>
+            <a href="/Trabajo/Galeria">Trabajos</a>
             <a href="/Home/Contacto">Contacto</a>
         </nav>
     </header>
@@ -23,7 +24,7 @@
     </main>
 
     <footer>
-        <p>&copy; @DateTime.Now.Year - Durlock Pro</p>
+        <p>&copy; @DateTime.Now.Year - Noré Tattos</p>
     </footer>
 </body>
 
