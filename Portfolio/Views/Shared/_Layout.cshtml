@@ -3,15 +3,29 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Portfolio</title>
-    @* <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> *@
-    @* <link rel="stylesheet" href="~/Portfolio.styles.css" asp-append-version="true" /> *@
-    <link rel="stylesheet" href="~/css/estilos.css" />
+    <meta name="description" content="Estudio de Tatuajes - Abbyss Tattoo">
+
+    <meta property="og:title" content="Abbyss - Tattoo Studio">
+    <meta property="og:description" content="Estudio de tatuajes independiente">
+    <meta property="og:image" content="img/icono-0.png">
+    <meta property="og:type" content="website">
+    @* <meta property="og:url" content="https://ipemanuel.github.io/AbyssDev/"> *@
+
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="icon" type="image/png" href="~/imagenes/isotipo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="~/imagenes/isotipo.png">
+
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true"/>
+
+    <title>@ViewData["Title"] - Abbyss Tattoo</title>
 </head>
 <body>
-    <header>
-        @* <a href="/">Noré</a> *@
-        <h1>Noré</h1>
+    <header >
+        
+        <a href="/" class="icono"><img src="~/imagenes/imagotipo.png" alt="Alternate Text" /></a>
         <nav>
             <a href="/">Inicio</a>
             <a href="/Trabajo/Galeria">Trabajos</a>
