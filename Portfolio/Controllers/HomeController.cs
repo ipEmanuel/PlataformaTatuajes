@@ -13,9 +13,30 @@ namespace Portfolio.Controllers
             _logger = logger;
         }
 
+
+        private static List<Trabajo> trabajos = new List<Trabajo>
+        {
+            new Trabajo {
+                Id = 1,
+                Titulo = "Tatuaje León",
+                Descripcion = "Tatuaje en blanco y negro",
+                Fecha = DateTime.Now,
+                ImagenUrl = "/imagenes/tatuajes-1.jpg"
+            },
+            new Trabajo {
+                Id = 2,
+                Titulo = "Tatuaje Geométrico",
+                Descripcion = "Diseño geométrico complejo",
+                Fecha = DateTime.Now,
+                ImagenUrl = "/imagenes/tatuajes-2.jpg"
+            }
+
+        };
+         
         public IActionResult Index()
         {
-            return View();
+
+            return View(trabajos);
         }
 
         public IActionResult Privacy()

@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<Portfolio.Models.Trabajo>
+@{
     ViewData["Title"] = "Inicio";
 }
 
@@ -13,4 +14,19 @@
             <img src="~/imagenes/imagen-hero.png" alt="Alternate Text" />
         </div>
      </div>
-</section>
+</section>@* Fin seccion Hero *@
+
+<section id="trabajos" class="trabajos-section">
+    <h2>Mis Trabajos</h2>
+    <div class="galeria">
+        @foreach (var trabajo in Model)
+        {
+            <div class="trabajo-card">
+                <img src="@trabajo.ImagenUrl" alt="@trabajo.Titulo" />
+                <h2>@trabajo.Titulo</h2>
+                <p>@trabajo.Descripcion</p>
+                <small>@trabajo.Fecha.ToString("dd/MM/yyyy")</small>
+            </div>
+        }
+    </div>
+</section>@* Fin seccion Trabajos *@
